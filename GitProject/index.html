@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orgoglio LGBTQ+</title>
     <style>
+        /* Sfondo animato con gradiente */
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, rgb(122, 0, 122), rgb(233, 10, 133));
+            background-size: 400% 400%;
+            animation: rainbowBackground 1ms infinite;
             color: white;
+            cursor: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/GLBT_flag.svg/500px-GLBT_flag.svg.png'), auto; /* Cursore arcobaleno */
+        }
+
+        @keyframes rainbowBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         h1 {
@@ -23,7 +33,7 @@
         .rainbow {
             background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
             background-size: 400% 400%;
-            animation: rainbow 10s ease infinite;
+            animation: rainbow 100ms ease infinite;
             color: black;
             padding: 20px;
             border-radius: 15px;
@@ -41,12 +51,22 @@
             padding: 50px 20px;
         }
 
+        /* Applicazione gradienti nelle sezioni */
         .section {
             margin: 40px 0;
             padding: 20px;
             border-radius: 10px;
-            background-color: #ffffff;
+            background: linear-gradient(45deg, #FF9AA2, #B3CDE0, #FFC3A0);
+            background-size: 400% 400%;
+            animation: rainbowSection 10s ease infinite;
             color: #333;
+        }
+
+        /* Animazione per i gradienti nelle sezioni */
+        @keyframes rainbowSection {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .section h2 {
@@ -60,12 +80,16 @@
         }
 
         .history {
-            background: #ff9aa2;
+            background: linear-gradient(45deg, #FF9AA2, #B3CDE0);
+            background-size: 400% 400%;
+            animation: rainbowSection 15s ease infinite;
             color: #fff;
         }
 
         .resources {
-            background: #b3cde0;
+            background: linear-gradient(45deg, #FF9AA2, #FFC3A0);
+            background-size: 400% 400%;
+            animation: rainbowSection 15s ease infinite;
         }
 
         .button-container {
@@ -109,14 +133,14 @@
 </head>
 <body>
 
-    <h1>Orgoglio LGBTQ+</h1>
+    <h1>GAYYY</h1>
 
     <div class="rainbow">
         <p>Benvenuti nella nostra pagina di Orgoglio!</p>
         <p>Insieme celebriamo l'amore in tutte le sue forme.</p>
     </div>
 
-    <div class="content">
+    <div class="rainbow">
         <!-- Sezione Storia dell'Orgoglio LGBTQ+ -->
         <div class="section history">
             <h2>La Storia dell'Orgoglio LGBTQ+</h2>
@@ -124,7 +148,7 @@
         </div>
 
         <!-- Sezione Risorse e Link Utili -->
-        <div class="section resources">
+        <div class="rainbow">
             <h2>Risorse e Link Utili</h2>
             <p>Se vuoi saperne di più o unirti a eventi locali, ecco alcuni link utili:</p>
             <ul>
@@ -135,7 +159,7 @@
         </div>
 
         <!-- Pulsante di Supporto -->
-        <div class="button-container">
+        <div class="rainbow">
             <button onclick="alert('Sei fantastico! Continua a brillare!')">Clicca per un messaggio di supporto!</button>
         </div>
     </div>
