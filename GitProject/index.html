@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Carina</title>
+    <title>Pagina di Orgoglio LGBTQ+</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: #f7c8d7;
-            transition: background-color 0.5s;
+            background-color: #f0f0f0;
+            color: white;
         }
         h1 {
-            color: #5f4b8b;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .rainbow {
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            animation: rainbow 10s ease infinite;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         button {
-            padding: 10px 20px;
-            background-color: #ff9aa2;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
             border: none;
             border-radius: 5px;
-            font-size: 18px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            margin-top: 20px;
         }
         button:hover {
-            background-color: #ff6f91;
+            background-color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>Benvenuto nella Pagina Carina!</h1>
-    <p>Clicca il pulsante per cambiare il colore di sfondo.</p>
-    <button onclick="changeBackground()">Cambia Colore</button>
-
-    <script>
-        function changeBackground() {
-            const colors = ['#f7c8d7', '#f0e3f1', '#ffb3d9', '#b3cde0', '#f5f5f5'];
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            document.body.style.backgroundColor = randomColor;
-        }
-    </script>
+    <h1>Orgoglio LGBTQ+</h1>
+    <div class="rainbow">
+        <p>Benvenuti nella nostra pagina di Orgoglio!</p>
+        <p>Insieme celebriamo l'amore in tutte le sue forme.</p>
+    </div>
+    <button onclick="alert('Sei fantastico! Continua a brillare!')">Clicca per un messaggio di supporto!</button>
 </body>
 </html>
