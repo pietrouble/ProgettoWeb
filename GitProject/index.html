@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orgoglio LGBTQ+</title>
+    <title>GAYYY</title>
     <style>
         /* Sfondo animato con gradiente */
         body {
@@ -13,7 +13,7 @@
             padding: 0;
             background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, rgb(122, 0, 122), rgb(233, 10, 133));
             background-size: 400% 400%;
-            animation: rainbowBackground 1ms infinite;
+            animation: rainbowBackground 1ms infinite, rotateAll 10s linear infinite;
             color: white;
             cursor: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/GLBT_flag.svg/500px-GLBT_flag.svg.png'), auto; /* Cursore arcobaleno */
         }
@@ -24,16 +24,23 @@
             100% { background-position: 0% 50%; }
         }
 
+        /* Animazione di rotazione su tutto il body */
+        @keyframes rotateAll {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         h1 {
             font-size: 48px;
             margin-top: 50px;
             color: #fff;
+            animation: rotateAll 10s linear infinite;
         }
 
         .rainbow {
             background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
             background-size: 400% 400%;
-            animation: rainbow 100ms ease infinite;
+            animation: rainbow 100ms ease infinite, rotateAll 10s linear infinite;
             color: black;
             padding: 20px;
             border-radius: 15px;
@@ -49,6 +56,7 @@
 
         .content {
             padding: 50px 20px;
+            animation: rotateAll 10s linear infinite;
         }
 
         /* Applicazione gradienti nelle sezioni */
@@ -58,7 +66,7 @@
             border-radius: 10px;
             background: linear-gradient(45deg, #FF9AA2, #B3CDE0, #FFC3A0);
             background-size: 400% 400%;
-            animation: rainbowSection 10s ease infinite;
+            animation: rainbowSection 10s ease infinite, rotateAll 10s linear infinite;
             color: #333;
         }
 
@@ -82,18 +90,19 @@
         .history {
             background: linear-gradient(45deg, #FF9AA2, #B3CDE0);
             background-size: 400% 400%;
-            animation: rainbowSection 15s ease infinite;
+            animation: rainbowSection 15s ease infinite, rotateAll 10ms linear infinite;
             color: #fff;
         }
 
         .resources {
             background: linear-gradient(45deg, #FF9AA2, #FFC3A0);
             background-size: 400% 400%;
-            animation: rainbowSection 15s ease infinite;
+            animation: rainbowSection 15s ease infinite, rotateAll 10ms linear infinite;
         }
 
         .button-container {
             margin-top: 30px;
+            animation: rotateAll 10s linear infinite;
         }
 
         button {
@@ -106,6 +115,7 @@
             cursor: pointer;
             margin-top: 20px;
             transition: transform 0.3s ease;
+            animation: rotateAll 10ms linear infinite;
         }
 
         button:hover {
@@ -118,6 +128,7 @@
             color: white;
             padding: 20px 0;
             margin-top: 40px;
+            animation: rotateAll 10ms linear infinite;
         }
 
         footer a {
@@ -142,7 +153,7 @@
 
     <div class="rainbow">
         <!-- Sezione Storia dell'Orgoglio LGBTQ+ -->
-        <div class="section history">
+        <div class="rainbow">
             <h2>La Storia dell'Orgoglio LGBTQ+</h2>
             <p>L'orgoglio LGBTQ+ ha radici profonde nella lotta per i diritti e l'uguaglianza delle persone lesbiche, gay, bisessuali, transgender e queer. Il primo evento significativo fu la rivolta di Stonewall, che ebbe luogo a New York nel 1969, segnando l'inizio dei movimenti moderni per i diritti civili LGBTQ+.</p>
         </div>
